@@ -26,7 +26,7 @@ resource "tls_private_key" "key" {
 }
 
 resource "aws_key_pair" "key" {
-  key_name   = "hasanalperen"
+  key_name   = "ekremkey"
   public_key = tls_private_key.key.public_key_openssh
 
   provisioner "local-exec" {
